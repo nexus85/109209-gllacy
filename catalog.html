@@ -15,7 +15,7 @@
                         <a href="#">Новинки</a>
                     </li>
                     <li>
-                        <a href="catalog.html">Сливочное</a>
+                        <a href="#">Сливочное</a>
                     </li>
                     <li>
                         <a href="#">Щербеты</a>
@@ -36,26 +36,22 @@
             </li>
         </ul>
         <a class="search__link" href="#">search</a>
-        <div class="search__hover">
-            <form class="search__form">
-                <input type="text" name="search" value="" placeholder="Что ищем?">
-                <span class="search__focus main-placeholder">Что ищем?</span>
-            </form>
-        </div>
+        <form class="search__form">
+            <input type="text" name="search" value="" placeholder="Что ищем?">
+            <span class="search__focus main-placeholder">Что ищем?</span>
+        </form>
         <a class="login__link" href="#">Вход</a>
-        <div class="login__hover">
-            <form class="login__form" action="#" method="post">
-                <input type="email" name="email" value="" placeholder="Электронная почта">
-                <span class="login__focus main-placeholder">Электронная почта</span>
-                <input type="password" name="password" value="" placeholder="Пароль">
-                <span class="login__focus main-placeholder">Пароль</span>
-                <button class="login__button button" type="submit">Войти</button>
-                <div class="login__admin-links">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
-                </div>
-            </form>
-        </div>
+        <form class="login__form" action="#" method="post">
+            <input type="email" name="email" value="" placeholder="Электронная почта">
+            <span class="login__focus main-placeholder">Электронная почта</span>
+            <input type="password" name="password" value="" placeholder="Пароль">
+            <span class="login__focus main-placeholder">Пароль</span>
+            <button class="login__button button" type="submit">Войти</button>
+            <div class="login__admin-links">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+            </div>
+        </form>
         <a class="basket__link" href="#">2 товара</a>
         <div class="basket__hover">
             <ul class="basket__content">
@@ -100,7 +96,7 @@
                     <a href="#">Каталог</a>
                 </li>
                 <li>
-                    <a href="#">Сливочное</a>
+                    <span>Сливочное</span>
                 </li>
             </ul>
         </div>
@@ -336,7 +332,7 @@
             </article>
         </div>
         <div class="page-list">
-            <a class="page-list__button page-list__button--inactive page-list__button--prev" href="#"></a>
+            <span class="page-list__button page-list__button--inactive page-list__button--prev"></span>
             <a class="page-list__button page-list__button--active" href="#">1</a>
             <a class="page-list__button" href="#">2</a>
             <a class="page-list__button" href="#">3</a>
