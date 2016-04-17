@@ -43,16 +43,16 @@
             <div class="search__hover">
                 <form class="search__form">
                     <input type="text" name="search" value="" placeholder="Что ищем?">
-                    <span class="search__focus">Что ищем?</span>
+                    <span class="search__focus main-placeholder">Что ищем?</span>
                 </form>
             </div>
             <a class="login__link" href="#">Вход</a>
             <div class="login__hover">
                 <form class="login__form" action="#" method="post">
                     <input type="email" name="email" value="" placeholder="Электронная почта">
-                    <span class="login__email">Электронная почта</span>
+                    <span class="login__focus main-placeholder">Электронная почта</span>
                     <input type="password" name="password" value="" placeholder="Пароль">
-                    <span class="login__password">Пароль</span>
+                    <span class="login__focus main-placeholder">Пароль</span>
                     <button class="login__button button" type="submit">Войти</button>
                     <div class="login__admin-links">
                         <a href="#">Забыли пароль?</a>
@@ -61,30 +61,6 @@
                 </form>
             </div>
             <a class="basket__link" href="#">Пусто</a>
-            <div class="basket__hover">
-                <ul class="basket__content">
-                    <li>
-                        <button class="basket__delete close" type="button">удалить</button>
-                        <img src="img/ice-cream1.jpg" width="33" height="33" alt="ice-cream">
-                        <span class="basket__description">Пломбир с апельсиновым джемом</span>
-                        <span class="basket__weight">1,5 кг</span>
-                        <span class="basket__price">х 200 руб.</span>
-                        <span class="basket__sum-price">300 руб.</span>
-                    </li>
-                    <li>
-                        <button class="basket__delete close" type="button">удалить</button>
-                        <img src="img/ice-cream2.jpg" width="33" height="33" alt="ice-cream">
-                        <span class="basket__description">Клубничный пломбир с присыпкой из белого шоколада</span>
-                        <span class="basket__weight">1,5 кг</span>
-                        <span class="basket__price">х 300 руб.</span>
-                        <span class="basket__sum-price">450 руб.</span>
-                    </li>
-                </ul>
-                <div class="basket__total-price">
-                    <span>Итого: 750 руб.</span>
-                    <button class="basket__button button" type="button">Оформить заказ</button>
-                </div>
-            </div>
             <div class="working">
                 <p class="working__hours">
                     С 10 до 20, ежедневно
@@ -237,7 +213,7 @@
                     </p>
                     <form action="#" method="post">
                         <input type="email" name="email" placeholder="Электронная почта">
-                        <span class="other__email">Электронная почта</span>
+                        <span class="other__focus main-placeholder">Электронная почта</span>
                         <button class="other__button button" type="submit">Отправить</button>
                     </form>
                 </article>
@@ -260,11 +236,11 @@
                 </h2>
                 <form class="feedback__form" action="#" method="post">
                     <input type="text" name="name" value="" placeholder="Как вас зовут?">
-                    <span class="feedback__name">Как вас зовут?</span>
+                    <span class="feedback__focus main-placeholder">Как вас зовут?</span>
                     <input type="email" name="email" value="" placeholder="Ваша почта для ответа?">
-                    <span class="feedback__email">Ваша почта для ответа?</span>
+                    <span class="feedback__focus main-placeholder">Ваша почта для ответа?</span>
                     <textarea name="commits" placeholder="Напишите что-нибудь..."></textarea>
-                    <span class="feedback__commits">Напишите что-нибудь...</span>
+                    <span class="feedback__focus main-placeholder">Напишите что-нибудь...</span>
                     <button class="feedback__button button" type="submit">Отправить</button>
                 </form>
                 <button class="feedback__close close" type="button">закрыть</button>
@@ -285,8 +261,10 @@
                 <a class="about-us__link" href="#">Экологические стандарты</a>
             </div>
             <div class="copyright">
-                <a class="copyright__logo" href="https://htmlacademy.ru"><img src="img/ha-logo.svg" 
-                                                                              width="108" height="37" alt="HTMLacademy logo"></a>
+                <a class="copyright__logo" href="https://htmlacademy.ru">
+                    <img src="img/ha-logo.svg"
+                         width="108" height="37" alt="HTMLacademy logo">
+                </a>
                 <p>
                     Сделано в<a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a> © 2016
                 </p>
