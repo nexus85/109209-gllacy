@@ -11,7 +11,7 @@
     <input class="slader-switcher" type="radio" id="btn-3" name="toggle">
     <div class="site-wrapper">
         <header class="page-header">
-            <img class="page-header-logo" src="img/logo.svg" width="153" height="63" alt="gllacy logo">
+            <a><img class="page-header-logo" src="img/logo.svg" width="153" height="63" alt="gllacy logo"></a>
             <ul class="navigation-menu">
                 <li>
                     <a href="#">Каталог</a>
@@ -41,26 +41,22 @@
                 </li>
             </ul>
             <a class="search__link" href="#">search</a>
-            <div class="search__hover">
-                <form class="search__form">
-                    <input type="text" name="search" value="" placeholder="Что ищем?">
-                    <span class="search__focus main-placeholder">Что ищем?</span>
-                </form>
-            </div>
+            <form class="search__form">
+                <input type="text" name="search" value="" placeholder="Что ищем?">
+                <span class="search__focus main-placeholder">Что ищем?</span>
+            </form>
             <a class="login__link" href="#">Вход</a>
-            <div class="login__hover">
-                <form class="login__form" action="#" method="post">
-                    <input type="email" name="email" value="" placeholder="Электронная почта">
-                    <span class="login__focus main-placeholder">Электронная почта</span>
-                    <input type="password" name="password" value="" placeholder="Пароль">
-                    <span class="login__focus main-placeholder">Пароль</span>
-                    <button class="login__button button" type="submit">Войти</button>
-                    <div class="login__admin-links">
-                        <a href="#">Забыли пароль?</a>
-                        <a href="#">Новая регистрация</a>
-                    </div>
-                </form>
-            </div>
+            <form class="login__form" action="#" method="post">
+                <input type="email" name="email" value="" placeholder="Электронная почта">
+                <span class="login__focus main-placeholder">Электронная почта</span>
+                <input type="password" name="password" value="" placeholder="Пароль">
+                <span class="login__focus main-placeholder">Пароль</span>
+                <button class="login__button button" type="submit">Войти</button>
+                <div class="login__admin-links">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                </div>
+            </form>
             <a class="basket__link" href="#">Пусто</a>
             <div class="working">
                 <p class="working__hours">
