@@ -1,3 +1,4 @@
+less/
 node_modules/
 .DS_Store
 Thumbs.db
@@ -7,3 +8,5 @@ Thumbs.db
 *.psd
 *.ai
 *.pdf
+Gruntfile.js
+package.json
