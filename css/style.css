@@ -1,0 +1,17 @@
+body {
+  font: 16px/24px "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  background-color: #849d8f;
+  color: #fff;
+}
+h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #323232;
+}
