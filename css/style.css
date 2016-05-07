@@ -507,9 +507,10 @@ textarea:focus {
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
+  min-width: 1200px;
 }
-.site-wrapper:before,
-.site-wrapper:after {
+.site-wrapper::before,
+.site-wrapper::after {
   content: "";
   background-image: url("../img/index/background-1.png");
   visibility: hidden;
