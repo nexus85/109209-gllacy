@@ -3,31 +3,15 @@
 <head>
     <meta charset="utf-8">
     <title>Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <header class="page-header">
-        <a href="index.html"><img class="page-header-logo" src="img/logo.svg" width="153" height="63" alt="gllacy logo"></a>
-        <ul class="navigation-menu">
+    <header class="page-header container">
+        <a class="page-header__logo" href="index.html"><img src="img/logo.svg" width="153" height="63" alt="gllacy logo"></a>
+        <ul class="navigation-menu navigation-menu--catalog">
             <li>
-                <a href="#">Каталог</a>
-                <ul class="navigation-menu__sub">
-                    <li>
-                        <a href="#">Новинки</a>
-                    </li>
-                    <li>
-                        <a href="#">Сливочное</a>
-                    </li>
-                    <li>
-                        <a href="#">Щербеты</a>
-                    </li>
-                    <li>
-                        <a href="#">Фруктовый лед</a>
-                    </li>
-                    <li>
-                        <a href="#">Мелорин</a>
-                    </li>
-                </ul>
+                <a>Каталог</a>
             </li>
             <li>
                 <a href="#">Доставка и оплата</a>
@@ -36,78 +20,84 @@
                 <a href="#">О Компании</a>
             </li>
         </ul>
-        <a class="search__link" href="#">search</a>
-        <form class="search__form">
-            <input type="text" name="search" value="" placeholder="Что ищем?">
-            <span class="search__focus main-placeholder">Что ищем?</span>
-        </form>
-        <a class="login__link" href="#">Вход</a>
-        <form class="login__form" action="#" method="post">
-            <input type="email" name="email" value="" placeholder="Электронная почта">
-            <span class="login__focus main-placeholder">Электронная почта</span>
-            <input type="password" name="password" value="" placeholder="Пароль">
-            <span class="login__focus main-placeholder">Пароль</span>
-            <button class="login__button button" type="submit">Войти</button>
-            <div class="login__admin-links">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
+        <div class="user-block">
+            <div class="search">
+                <a class="search__link search__link--catalog" href="#">search</a>
+                <form class="search__form">
+                    <input type="text" name="search" value="" placeholder="Что ищем?">
+                    <span class="search__focus main-placeholder">Что ищем?</span>
+                </form>
             </div>
-        </form>
-        <a class="basket__link" href="#">2 товара</a>
-        <div class="basket__hover">
-            <ul class="basket__content">
-                <li>
-                    <button class="basket__delete close" type="button">удалить</button>
-                    <img src="img/ice-cream1.jpg" width="33" height="33" alt="ice-cream">
-                    <span class="basket__description">Пломбир с апельсиновым джемом</span>
-                    <span class="basket__weight">1,5 кг</span>
-                    <span class="basket__price">х 200 руб.</span>
-                    <span class="basket__sum-price">300 руб.</span>
-                </li>
-                <li>
-                    <button class="basket__delete close" type="button">удалить</button>
-                    <img src="img/ice-cream2.jpg" width="33" height="33" alt="ice-cream">
-                    <span class="basket__description">Клубничный пломбир с присыпкой из белого шоколада</span>
-                    <span class="basket__weight">1,5 кг</span>
-                    <span class="basket__price">х 300 руб.</span>
-                    <span class="basket__sum-price">450 руб.</span>
-                </li>
-            </ul>
-            <div class="basket__total-price">
-                <span>Итого: 750 руб.</span>
-                <button class="basket__button button" type="button">Оформить заказ</button>
+            <div class="login">
+                <a class="login__link" href="#">Вход</a>
+                <form class="login__form" action="#" method="post">
+                    <input type="email" name="email" value="" placeholder="Электронная почта">
+                    <span class="login__focus main-placeholder">Электронная почта</span>
+                    <input type="password" name="password" value="" placeholder="Пароль">
+                    <span class="login__focus main-placeholder">Пароль</span>
+                    <button class="login__button button" type="submit">Войти</button>
+                    <div class="login__admin-links">
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Новая регистрация</a>
+                    </div>
+                </form>
             </div>
-        </div>
-        <div class="working">
-            <p class="working__hours">
-                С 10 до 20, ежедневно
-            </p>
-            <p class="working__phone">
-                8&nbsp;812 450-25-25
-            </p>
+            <div class="basket">
+                <a class="basket__link basket__link--catalog" href="#">2 товара</a>
+                <div class="basket__hover">
+                    <ul class="basket__content">
+                        <li>
+                            <button class="basket__delete close" type="button">удалить</button>
+                            <img src="img/ice-cream1.png" width="33" height="33" alt="ice-cream">
+                            <span class="basket__items basket__items--description">Пломбир с апельсиновым джемом</span>
+                            <span class="basket__items basket__items--weight">1,5 кг</span>
+                            <span class="basket__items basket__items--price">х 200 руб.</span>
+                            <span class="basket__items basket__items--sum-price">300 руб.</span>
+                        </li>
+                        <li>
+                            <button class="basket__delete close" type="button">удалить</button>
+                            <img src="img/ice-cream2.png" width="33" height="33" alt="ice-cream">
+                            <span class="basket__items basket__items--description">Клубничный пломбир с присыпкой из белого шоколада</span>
+                            <span class="basket__items basket__items--weight">1,5 кг</span>
+                            <span class="basket__items basket__items--price">х 300 руб.</span>
+                            <span class="basket__items basket__items--sum-price">450 руб.</span>
+                        </li>
+                    </ul>
+                    <div class="basket__total-price">
+                        <span>Итого: 750 руб.</span>
+                        <button class="basket__button button" type="button">Оформить заказ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="working">
+                <p class="working__hours">
+                    С 10 до 20, ежедневно
+                </p>
+                <p class="working__phone">
+                    8&nbsp;812 450-25-25
+                </p>
+            </div>
         </div>
     </header>
-    <main>
-        <div class="breadcrumbs">
-            <ul>
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    <a href="#">Каталог</a>
-                </li>
-                <li>
-                    <a>Сливочное</a>
-                </li>
-            </ul>
-        </div>
+    <main class="container">
+        <ul class="breadcrumbs">
+            <li>
+                <a href="#">Главная</a>
+            </li>
+            <li>
+                <a href="#">Каталог</a>
+            </li>
+            <li>
+                <a>Сливочное</a>
+            </li>
+        </ul>
         <h1 class="title">
             Сливочное мороженое
         </h1>
         <div class="filters">
             <form action="#" method="post">
-                <fieldset class="filters__sorting">
-                    <legend>Сортировка:</legend>
+                <fieldset class="filters__item filters__item--sorting">
+                    <legend class="filters__legend">Сортировка:</legend>
                     <select name="sorting">
                         <option>по популярности</option>
                         <option>сначала недорогие</option>
@@ -131,9 +121,9 @@
                         <span class="range__toggle range__toggle--max"></span>
                     </div>
                 </div>
-                <fieldset class="filters__fat">
-                    <legend>Жирность:</legend>
-                    <div class="radio-check-style">
+                <fieldset class="filters__item filters__item--fat">
+                    <legend class="filters__legend">Жирность:</legend>
+                    <div class="radio-check-style radio-check-style--radio">
                         <input id="rad-1" type="radio" name="fat" value="0">
                         <label for="rad-1">0%</label>
                         <input id="rad-2" type="radio" name="fat" value="<10" checked>
@@ -144,9 +134,9 @@
                         <label for="rad-4">выше 30%</label>
                     </div>
                 </fieldset>
-                <fieldset class="filters__excipient">
-                    <legend>Наполнители:</legend>
-                    <div class="radio-check-style">
+                <fieldset class="filters__item filters__item--excipient">
+                    <legend class="filters__legend">Наполнители:</legend>
+                    <div class="radio-check-style radio-check-style--check">
                         <input id="check-1" type="checkbox" name="chocolate" checked>
                         <label for="check-1">шоколадные</label>
                         <input id="check-2" type="checkbox" name="sugar-powder" checked>
@@ -158,8 +148,8 @@
                         <input id="check-5" type="checkbox" name="jams">
                         <label for="check-5">джемы</label>
                     </div>
-                    <button class="filters__button" type="submit">Применить</button>
                 </fieldset>
+                <button class="filters__button" type="submit">Применить</button>
             </form>
         </div>
         <div class="catalog">
@@ -342,7 +332,7 @@
             <a class="page-list__button page-list__button--next" href="#"></a>
         </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
         <div class="social__links">
             <a class="social__link social__link--tw" href="#">twitter</a>
             <a class="social__link social__link--vk" href="#">vkontakte</a>
@@ -360,8 +350,8 @@
                 <img src="img/ha-logo.svg"
                      width="108" height="37" alt="HTMLacademy logo">
             </a>
-            <p>
-                Сделано в<a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a> © 2016
+            <p class="copyright__made">
+                Сделано в <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a> © 2016
             </p>
         </div>
     </footer>
