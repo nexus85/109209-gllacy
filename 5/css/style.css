@@ -615,6 +615,12 @@ textarea:focus {
   height: 61px;
   background: url("../img/index/hit.png") no-repeat;
 }
+.catalog__item:hover .catalog__hover {
+  display: block;
+}
+.catalog__item:hover .catalog__image {
+  z-index: 40;
+}
 .catalog__image {
   margin: 0;
   position: relative;
@@ -650,6 +656,24 @@ textarea:focus {
 }
 .catalog__hover {
   display: none;
+  position: absolute;
+  z-index: 30;
+  top: -7px;
+  left: -8px;
+  width: 280px;
+  height: 405px;
+  background-color: rgba(248, 247, 244, 0.3);
+  border-radius: 5px;
+}
+.catalog__button {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  width: 170px;
+  padding: 8px 16px 11px;
+  margin-top: 340px;
+  margin-left: 40px;
 }
 .filler {
   font-size: 0;
@@ -898,8 +922,9 @@ textarea:focus {
   text-decoration: none;
 }
 .breadcrumbs a {
-  display: block;
   font-size: 14px;
+  line-height: 16px;
+  text-decoration: underline;
 }
 .title {
   font-size: 35px;
