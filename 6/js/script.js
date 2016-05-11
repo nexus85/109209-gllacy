@@ -2,7 +2,7 @@
     var link = document.querySelector(".map__button");
     var map = document.querySelector(".map");
 
-    function showMap() {
+    ymaps.ready(function showMap() {
         var myMap = new ymaps.Map(map, {
             center: [59.938631, 30.323055],
             zoom: 17
@@ -14,16 +14,12 @@
          }, {
              iconLayout: 'default#image',
              iconImageHref: 'img/pin.png',
-             iconImageSize: [180, 140],
-             iconImageOffset: [-50, -140],
+             iconImageSize: [180, 120],
+             iconImageOffset: [-50, -120],
          });
 
         myMap.geoObjects.add(myPlacemark);
-    };
-
-    if (map) {
-        showMap();
-    }
+    });
 
     if (link) {
         var popup = document.querySelector(".feedback");

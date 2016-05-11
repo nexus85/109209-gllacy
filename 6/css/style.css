@@ -104,6 +104,12 @@ input[type="password"]:hover,
 textarea:hover {
   box-shadow: inset 0 0 2px rgba(154, 154, 154, 0.52);
 }
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="password"]:valid,
+textarea:valid + label {
+  box-shadow: inset 0 0 2px rgba(154, 154, 154, 0.52);
+}
 input[type="text"]:valid + label,
 input[type="email"]:valid + label,
 input[type="password"]:valid + label,
@@ -847,6 +853,7 @@ textarea:focus {
 }
 .map {
   min-height: 430px;
+  background: url("../img/map.jpg") center no-repeat;
 }
 .map__contant {
   width: 1200px;
@@ -903,10 +910,10 @@ textarea:focus {
 .feedback {
   display: none;
   position: fixed;
-  top: 35.6%;
+  top: 50%;
   left: 50%;
   width: 430px;
-  margin-left: -240px;
+  transform: translate(-50%, -50%);
   padding: 13px 25px 25px;
   z-index: 70;
   background-color: #f8f7f4;
@@ -989,15 +996,15 @@ textarea:focus {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .feedback__name {
-  top: 50px;
+  top: 40px;
   left: 40px;
 }
 .feedback__email {
-  top: 118px;
+  top: 105px;
   left: 40px;
 }
 .feedback__commits {
-  top: 185px;
+  top: 170px;
   left: 40px;
 }
 input[type="text"]:focus ~ .feedback__name {
