@@ -5,7 +5,8 @@
     <title>Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500,400&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
     <input class="slider-switcher" type="radio" id="btn-1" name="toggle" checked>
@@ -16,7 +17,7 @@
             <a class="page-header__logo"><img src="img/logo.svg" width="153" height="63" alt="gllacy logo"></a>
             <ul class="navigation-menu">
                 <li>
-                    <a href="catalog.html">Каталог</a>
+                    <a href="#">Каталог</a>
                     <ul class="navigation-menu__sub">
                         <li>
                             <a href="#">Новинки</a>
@@ -46,17 +47,17 @@
                 <div class="search">
                     <a class="search__link" href="#">search</a>
                     <form class="search__form">
-                        <input type="text" name="search" value="" placeholder="Что ищем?">
-                        <span class="search__focus main-placeholder">Что ищем?</span>
+                        <input type="text" required name="search" value="" placeholder="Что ищем?">
+                        <label class="search__focus main-placeholder">Что ищем?</label>
                     </form>
                 </div>
                 <div class="login">
                     <a class="login__link" href="#">Вход</a>
                     <form class="login__form" action="#" method="post">
-                        <input type="email" name="email" value="" placeholder="Электронная почта">
-                        <span class="login__email main-placeholder">Электронная почта</span>
-                        <input type="password" name="password" value="" placeholder="Пароль">
-                        <span class="login__password main-placeholder">Пароль</span>
+                        <input type="email" name="email" required placeholder="Электронная почта">
+                        <label class="login__email main-placeholder">Электронная почта</label>
+                        <input type="password" name="password" required placeholder="Пароль">
+                        <label class="login__password main-placeholder">Пароль</label>
                         <button class="login__button button" type="submit">Войти</button>
                         <div class="login__admin-links">
                             <a href="#">Забыли пароль?</a>
@@ -129,9 +130,9 @@
                             310&#8381;<span>/кг</span>
                         </figcaption>
                     </figure>
-                    <p class="catalog__description">
+                    <a href="#" class="catalog__description">
                         Сливочное с апельсиновым джемом и цитрусовой стружкой
-                    </p>
+                    </a>
                 </article>
                 <article class="catalog__item catalog__item--hit">
                     <figure class="catalog__image">
@@ -140,9 +141,9 @@
                             380&#8381;<span>/кг</span>
                         </figcaption>
                     </figure>
-                    <p class="catalog__description">
+                    <a href="#" class="catalog__description">
                         Сливочно-кофейное с кусочками шоколада
-                    </p>
+                    </a>
                 </article>
                 <article class="catalog__item catalog__item--hit">
                     <figure class="catalog__image">
@@ -151,9 +152,9 @@
                             355&#8381;<span>/кг</span>
                         </figcaption>
                     </figure>
-                    <p class="catalog__description">
+                    <a href="#" class="catalog__description">
                         Сливочно-клубничное с присыпкой из белого шоколада
-                    </p>
+                    </a>
                 </article>
                 <article class="catalog__item catalog__item--hit">
                     <figure class="catalog__image">
@@ -162,9 +163,9 @@
                             415&#8381;<span>/кг</span>
                         </figcaption>
                     </figure>
-                    <p class="catalog__description">
+                    <a href="#" class="catalog__description">
                         Сливочное крем-брюле с карамельной подливкой
-                    </p>
+                    </a>
                 </article>
             </section>
             <section class="info">
@@ -207,16 +208,14 @@
                         и не слать всякой не нужной ерунды. Честно =)
                     </p>
                     <form class="other__form" action="#" method="post">
-                        <input type="email" name="email" placeholder="Электронная почта">
-                        <span class="other__email main-placeholder">Электронная почта</span>
+                        <input type="email" name="email" required placeholder="Электронная почта">
+                        <label class="other__email main-placeholder">Электронная почта</label>
                         <button class="other__button button" type="submit">Отправить</button>
                     </form>
                 </article>
             </section>
         </main>
-        <section class="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=FnL4EN9htn_nWE28AppFCc4GDbrcg6cE&width=100%&height=430&lang=ru_RU&sourceType=constructor&scroll=true"></script>
-        </section>
+        <section class="map"></section>
         <section class="map__contant">
             <div class="map__address">
                 <p class="map__contact">
@@ -228,16 +227,16 @@
                 <a class="map__button button" href="#">Форма обратной связи</a>
             </div>
             <div class="feedback">
-                <h2>
+                <h2 class="feedback__title">
                     Мы обязательно вам ответим!
                 </h2>
                 <form class="feedback__form" action="#" method="post">
-                    <input type="text" name="name" value="" placeholder="Как вас зовут?">
-                    <span class="feedback__focus main-placeholder">Как вас зовут?</span>
-                    <input type="email" name="email" value="" placeholder="Ваша почта для ответа?">
-                    <span class="feedback__focus main-placeholder">Ваша почта для ответа?</span>
-                    <textarea name="commits" placeholder="Напишите что-нибудь..."></textarea>
-                    <span class="feedback__focus main-placeholder">Напишите что-нибудь...</span>
+                    <input type="text" name="name" required placeholder="Как вас зовут?">
+                    <label class="feedback__name main-placeholder">Как вас зовут?</label>
+                    <input type="email" name="email" required placeholder="Ваша почта для ответа?">
+                    <label class="feedback__email main-placeholder">Ваша почта для ответа?</label>
+                    <textarea name="commits" required placeholder="Напишите что-нибудь..."></textarea>
+                    <label class="feedback__commits main-placeholder">Напишите что-нибудь...</label>
                     <button class="feedback__button button" type="submit">Отправить</button>
                 </form>
                 <button class="feedback__close close" type="button">закрыть</button>
@@ -268,5 +267,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/script-min.js"></script>
 </body>
 </html>
