@@ -1051,10 +1051,18 @@ textarea:focus ~ .feedback__commits {
 .breadcrumbs li:last-child a {
   text-decoration: none;
 }
+.breadcrumbs li:last-child a:hover,
+.breadcrumbs li:last-child a:active {
+  color: #fff;
+}
 .breadcrumbs a {
   font-size: 14px;
   line-height: 16px;
   text-decoration: underline;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  color: #ffbc9e;
 }
 .title {
   font-size: 35px;
