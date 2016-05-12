@@ -1317,7 +1317,7 @@ textarea:focus ~ .feedback__commits {
 }
 .page-footer {
   font-size: 0;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .social__links {
   display: inline-block;
