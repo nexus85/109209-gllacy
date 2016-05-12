@@ -5,7 +5,7 @@
     <title>Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500,400&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
 </head>
 <body>
     <header class="page-header container">
@@ -23,19 +23,19 @@
         </ul>
         <div class="user-block">
             <div class="search">
-                <a class="search__link search__link--catalog" href="#">search</a>
+                <a class="search__link" href="#">search</a>
                 <form class="search__form">
-                    <input type="text" name="search" value="" placeholder="Что ищем?">
-                    <span class="search__focus main-placeholder">Что ищем?</span>
+                    <input type="text" required name="search" value="" placeholder="Что ищем?">
+                    <label class="search__focus main-placeholder">Что ищем?</label>
                 </form>
             </div>
             <div class="login">
                 <a class="login__link" href="#">Вход</a>
                 <form class="login__form" action="#" method="post">
-                    <input type="email" name="email" value="" placeholder="Электронная почта">
-                    <span class="login__focus main-placeholder">Электронная почта</span>
-                    <input type="password" name="password" value="" placeholder="Пароль">
-                    <span class="login__focus main-placeholder">Пароль</span>
+                    <input type="email" name="email" required placeholder="Электронная почта">
+                    <label class="login__email main-placeholder">Электронная почта</label>
+                    <input type="password" name="password" required placeholder="Пароль">
+                    <label class="login__password main-placeholder">Пароль</label>
                     <button class="login__button button" type="submit">Войти</button>
                     <div class="login__admin-links">
                         <a href="#">Забыли пароль?</a>
@@ -161,9 +161,9 @@
                         310&#8381;<span>/кг</span>
                     </figcaption>
                 </figure>
-                <p class="catalog__description">
+                <a href="#" class="catalog__description">
                     Сливочное с апельсиновым джемом и цитрусовой стружкой
-                </p>
+                </a>
                 <div class="catalog__hover">
                     <a class="catalog__button button" href="#">Быстрый просмотр</a>
                 </div>
@@ -175,9 +175,9 @@
                         380&#8381;<span>/кг</span>
                     </figcaption>
                 </figure>
-                <p class="catalog__description">
+                <a href="#" class="catalog__description">
                     Сливочно-кофейное с кусочками шоколада
-                </p>
+                </a>
                 <div class="catalog__hover">
                     <a class="catalog__button button" href="#">Быстрый просмотр</a>
                 </div>
@@ -189,9 +189,9 @@
                         355&#8381;<span>/кг</span>
                     </figcaption>
                 </figure>
-                <p class="catalog__description">
+                <a href="#" class="catalog__description">
                     Сливочно-клубничное с присыпкой из белого шоколада
-                </p>
+                </a>
                 <div class="catalog__hover">
                     <a class="catalog__button button" href="#">Быстрый просмотр</a>
                 </div>
@@ -203,9 +203,9 @@
                         415&#8381;<span>/кг</span>
                     </figcaption>
                 </figure>
-                <p class="catalog__description">
+                <a href="#" class="catalog__description">
                     Сливочное крем-брюле с карамельной подливкой
-                </p>
+                </a>
                 <div class="catalog__hover">
                     <a class="catalog__button button" href="#">Быстрый просмотр</a>
                 </div>
@@ -217,9 +217,9 @@
                         325&#8381;<span>/кг</span>
                     </figcaption>
                 </figure>
-                <p class="catalog__description">
+                <a href="#" class="catalog__description">
                     Сливочное с брусничным джемом
-                </p>
+                </a>
                 <div class="catalog__hover">
                     <a class="catalog__button button" href="#">Быстрый просмотр</a>
                 </div>
@@ -231,9 +231,9 @@
                         410&#8381;<span>/кг</span>
                     </figcaption>
                 </figure>
-                <p class="catalog__description">
+                <a href="#" class="catalog__description">
                     Сливочно-черничное с цельными ягодами черники
-                </p>
+                </a>
                 <div class="catalog__hover">
                     <a class="catalog__button button" href="#">Быстрый просмотр</a>
                 </div>
@@ -245,9 +245,9 @@
                         375&#8381;<span>/кг</span>
                     </figcaption>
                 </figure>
-                <p class="catalog__description">
+                <a href="#" class="catalog__description">
                     Сливочно-лимонное с карамельной присыпкой
-                </p>
+                </a>
                 <div class="catalog__hover">
                     <a class="catalog__button button" href="#">Быстрый просмотр</a>
                 </div>
@@ -259,9 +259,9 @@
                         320&#8381;<span>/кг</span>
                     </figcaption>
                 </figure>
-                <p class="catalog__description">
+                <a href="#" class="catalog__description">
                     Сливочное с шоколадной стружкой
-                </p>
+                </a>
                 <div class="catalog__hover">
                     <a class="catalog__button button" href="#">Быстрый просмотр</a>
                 </div>
@@ -273,9 +273,9 @@
                         440&#8381;<span>/кг</span>
                     </figcaption>
                 </figure>
-                <p class="catalog__description">
+                <a href="#" class="catalog__description">
                     Сливочно-ванильное с кусочками&nbsp;шоколада
-                </p>
+                </a>
                 <div class="catalog__hover">
                     <a class="catalog__button button" href="#">Быстрый просмотр</a>
                 </div>
@@ -287,9 +287,9 @@
                         435&#8381;<span>/кг</span>
                     </figcaption>
                 </figure>
-                <p class="catalog__description">
+                <a href="#" class="catalog__description">
                     Сливочноe с ментоловым сиропом
-                </p>
+                </a>
                 <div class="catalog__hover">
                     <a class="catalog__button button" href="#">Быстрый просмотр</a>
                 </div>
@@ -301,9 +301,9 @@
                         355&#8381;<span>/кг</span>
                     </figcaption>
                 </figure>
-                <p class="catalog__description">
+                <a href="#" class="catalog__description">
                     Сливочное с кусочками черного шоколада
-                </p>
+                </a>
                 <div class="catalog__hover">
                     <a class="catalog__button button" href="#">Быстрый просмотр</a>
                 </div>
@@ -315,9 +315,9 @@
                         420&#8381;<span>/кг</span>
                     </figcaption>
                 </figure>
-                <p class="catalog__description">
+                <a href="#" class="catalog__description">
                     Сливочное с мятным сиропом
-                </p>
+                </a>
                 <div class="catalog__hover">
                     <a class="catalog__button button" href="#">Быстрый просмотр</a>
                 </div>

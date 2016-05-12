@@ -104,6 +104,19 @@ input[type="password"]:hover,
 textarea:hover {
   box-shadow: inset 0 0 2px rgba(154, 154, 154, 0.52);
 }
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="password"]:valid,
+textarea:valid {
+  box-shadow: inset 0 0 2px rgba(154, 154, 154, 0.52);
+}
+input[type="text"]:valid + label,
+input[type="email"]:valid + label,
+input[type="password"]:valid + label,
+textarea:valid + label {
+  display: block;
+  color: #9a9a9a;
+}
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
@@ -610,7 +623,7 @@ textarea:focus {
   content: "";
   top: -2px;
   left: -1px;
-  z-index: 20;
+  z-index: 50;
   width: 61px;
   height: 61px;
   background: url("../img/index/hit.png") no-repeat;
@@ -618,7 +631,8 @@ textarea:focus {
 .catalog__item:hover .catalog__hover {
   display: block;
 }
-.catalog__item:hover .catalog__image {
+.catalog__item:hover .catalog__image,
+.catalog__item:hover .catalog__description {
   z-index: 40;
 }
 .catalog__image {
@@ -646,6 +660,8 @@ textarea:focus {
   font-size: 30px;
 }
 .catalog__description {
+  position: relative;
+  display: block;
   margin: 0;
   font-size: 16px;
   line-height: 22px;
@@ -653,6 +669,10 @@ textarea:focus {
   text-decoration: underline;
   padding-left: 5px;
   width: 255px;
+}
+.catalog__description:hover,
+.catalog__description:active {
+  color: #ffbc9e;
 }
 .catalog__hover {
   display: none;
@@ -833,6 +853,7 @@ textarea:focus {
 }
 .map {
   min-height: 430px;
+  background: url("../img/map.jpg") center no-repeat;
 }
 .map__contant {
   width: 1200px;
@@ -888,6 +909,115 @@ textarea:focus {
 }
 .feedback {
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 430px;
+  transform: translate(-50%, -50%);
+  padding: 13px 25px 25px;
+  z-index: 70;
+  background-color: #f8f7f4;
+  border-radius: 7px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+.feedback__title {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 19px;
+}
+.feedback__close {
+  display: inline-block;
+  font-size: 0;
+  cursor: pointer;
+  vertical-align: top;
+  border: none;
+  padding: 0;
+  margin: 10px;
+  width: 17px;
+  min-height: 17px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+}
+.feedback__close::after,
+.feedback__close::before {
+  display: block;
+  position: absolute;
+  content: " ";
+  width: 22px;
+  min-height: 2px;
+  background-color: #333;
+  top: 11px;
+  left: -9px;
+}
+.feedback__close::after {
+  transform: rotate(45deg);
+}
+.feedback__close::before {
+  transform: rotate(-45deg);
+}
+.feedback__form input {
+  display: block;
+  width: 246px;
+  margin-bottom: 18px;
+}
+.feedback__form textarea {
+  font-family: "Roboto", "Arial", sans-serif;
+  display: block;
+  padding: 10px;
+  margin-bottom: 25px;
+  width: 407px;
+  height: 133px;
+  resize: none;
+}
+.feedback__form span {
+  z-index: 70;
+}
+.feedback__button {
+  float: right;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 6px 23px 13px;
+}
+.feedback__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.feedback__name {
+  top: 40px;
+  left: 40px;
+}
+.feedback__email {
+  top: 105px;
+  left: 40px;
+}
+.feedback__commits {
+  top: 170px;
+  left: 40px;
+}
+input[type="text"]:focus ~ .feedback__name {
+  display: block;
+}
+input[type="email"]:focus ~ .feedback__email {
+  display: block;
+}
+textarea:focus ~ .feedback__commits {
+  display: block;
+}
+.content-show {
+  display: block;
 }
 .breadcrumbs {
   position: relative;
@@ -921,10 +1051,18 @@ textarea:focus {
 .breadcrumbs li:last-child a {
   text-decoration: none;
 }
+.breadcrumbs li:last-child a:hover,
+.breadcrumbs li:last-child a:active {
+  color: #fff;
+}
 .breadcrumbs a {
   font-size: 14px;
   line-height: 16px;
   text-decoration: underline;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  color: #ffbc9e;
 }
 .title {
   font-size: 35px;
@@ -1187,7 +1325,7 @@ textarea:focus {
 }
 .page-footer {
   font-size: 0;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .social__links {
   display: inline-block;
