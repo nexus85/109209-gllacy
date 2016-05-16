@@ -45,7 +45,6 @@ input {
   line-height: 24px;
   font-weight: 400;
   color: #999999;
-  padding-top: 10px;
 }
 ::-moz-placeholder {
   font-family: "Roboto", "Arial", sans-serif;
@@ -278,7 +277,7 @@ textarea:focus {
 .search__form {
   display: none;
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   background-color: #f8f7f4;
   border-radius: 7px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -358,7 +357,7 @@ textarea:focus {
 .login__form {
   display: none;
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   background-color: #f8f7f4;
   border-radius: 7px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -411,7 +410,7 @@ textarea:focus {
 .basket__hover {
   display: none;
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   background-color: #f8f7f4;
   border-radius: 7px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -678,7 +677,7 @@ textarea:focus {
   display: none;
   position: absolute;
   z-index: 30;
-  top: -7px;
+  bottom: -70px;
   left: -8px;
   width: 280px;
   height: 405px;
@@ -690,7 +689,7 @@ textarea:focus {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  width: 170px;
+  width: 180px;
   padding: 8px 16px 11px;
   margin-top: 340px;
   margin-left: 40px;
@@ -714,9 +713,11 @@ textarea:focus {
 }
 .filler__item--raspberry {
   background: #892343 url("../img/index/raspberry.jpg");
+  background-size: 100% 100%;
 }
 .filler__item--chocolate {
   background: #5a3015 url("../img/index/chocolate.jpg");
+  background-size: 100% 100%;
 }
 .filler__title {
   font-size: 35px;
@@ -730,6 +731,7 @@ textarea:focus {
   font-weight: 700;
   line-height: 22px;
   margin: 0;
+  padding-bottom: 90px;
 }
 .filler__button {
   position: absolute;
@@ -1059,10 +1061,6 @@ textarea:focus ~ .feedback__commits {
   font-size: 14px;
   line-height: 16px;
   text-decoration: underline;
-}
-.breadcrumbs a:hover,
-.breadcrumbs a:active {
-  color: #ffbc9e;
 }
 .title {
   font-size: 35px;
