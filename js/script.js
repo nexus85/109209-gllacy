@@ -27,13 +27,13 @@
         var close = popup.querySelector(".feedback__close");
         link.onclick = function (e) {
             e.preventDefault();
-            popup.classList.add("content-show");
-            popupOverlay.classList.add("content-show");
+            popup.classList.add("feedback-show");
+            popupOverlay.classList.add("overlay-show");
         };
         close.onclick = function (e) {
             e.preventDefault();
-            popup.classList.remove("content-show");
-            popupOverlay.classList.remove("content-show");
+            popup.classList.remove("feedback-show");
+            popupOverlay.classList.remove("overlay-show");
         };
     };
 }

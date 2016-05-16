@@ -799,9 +799,11 @@ textarea:focus {
 .other__item--news {
   margin-right: 25px;
   background: #fff url("../img/index/strawberry-background.jpg") no-repeat;
+  background-size: 100% 100%;
 }
 .other__item--newsletter {
   background: #f8f7f4 url("../img/index/post-background.jpg") no-repeat;
+  background-size: 100% 100%;
 }
 .other__title {
   font-size: 16px;
@@ -967,6 +969,7 @@ textarea:focus {
   display: block;
   width: 246px;
   margin-bottom: 18px;
+  height: 25px;
 }
 .feedback__form textarea {
   font-family: "Roboto", "Arial", sans-serif;
@@ -1018,8 +1021,18 @@ input[type="email"]:focus ~ .feedback__email {
 textarea:focus ~ .feedback__commits {
   display: block;
 }
-.content-show {
+.feedback-show {
   display: block;
+  animation: bounce 0.6s;
+}
+.overlay-show {
+    display: block;
+}
+@keyframes bounce {
+  0% { transform: translate(-50%, -2000px); }
+  70% { transform: translate(-50%, 30px); }
+  90% { transform: translate(-50%, -10px); }
+  100% { transform: translateY(-50%, 0); }
 }
 .breadcrumbs {
   position: relative;
@@ -1107,6 +1120,9 @@ textarea:focus ~ .feedback__commits {
 }
 .filters__item--sorting select::-ms-expand {
   display: none;
+}
+.filters__item--sorting option {
+    background-color: #849d8f;
 }
 .filters__item--range {
   width: 220px;
